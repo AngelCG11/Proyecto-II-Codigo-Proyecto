@@ -1,43 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+  
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    
+   
     <title>React App</title>
+
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Instituto Tecnologico Superior de Tierra Blanca</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Oferta Educativa</a></li>
+                <li><a class="dropdown-item" href="#">Estudiantes</a></li>
+                <li><a class="dropdown-item" href="#">Docentes</a></li>
+                <li><a class="dropdown-item" href="#">Egresados</a></li>
+                <li><a class="dropdown-item" href="#">Subcomité de Ética</a></li>                
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Aspirantes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Transparencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">#ME QUEDO EN CASA</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://principal.itstb.edu.mx/wp-content/uploads/2021/10/Cero_Tolerancia-800x192.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="https://principal.itstb.edu.mx/wp-content/uploads/2022/02/banner-web-1920x460.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="https://principal.itstb.edu.mx/wp-content/uploads/2021/02/biblioteca.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Atención egresados y egresadas que concluyeron sus residencias profesionales.</h5>
+        <p class="card-text">A los(las) egresados (as) del campus central y extensión Soledad de Doblado de la Generación 2017 – 2022, que ya hayan concluido con su residencia profesional y tengan estatus de egresado(a) en el Departamento de Control Escolar, se les invita a continuar con los trámites para la obtención de su certificado de estudios completo y carta de pasante, bajo el siguiente mecanismo:</p>
+        <a href="#" class="btn btn-primary">Entrar</a>
+      </div>
+    </div>
+
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ITSTB</a>
+      </div>
+    </nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
